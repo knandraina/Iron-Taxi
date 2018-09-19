@@ -60,8 +60,3 @@ app.use('/', auth)
 
 module.exports = app;
 
-
-//master
-//VIEW
-
-//avance view
