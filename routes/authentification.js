@@ -20,7 +20,7 @@ router.post('/register', (req, res, next) => {
     console.log(username, password, email)
     if (username === '' || password === '' || email ===' ') {
         res.render('index', {
-            errorMessage : 'Indicate an username, email and password to login'
+            errorMessages : 'Indicate an username, email and password to login'
         })
         return
     }
