@@ -97,3 +97,9 @@ color: #fff;
 background-color: #1CA347;
 border-color: #1CA347;
 }
+
+.error-message{
+  color : red;
+  display : flex;
+  justify-content: center;
+}

@@ -8,15 +8,22 @@ router.post('/login', (req, res, next) => {
     console.log(username, password);
     if (username ==='' || password === '') {
         res.render("index", {
-            errorMessage : 'Indicate a username and a password to sign up'
+            errorMessage : 'Indicate a username and a password to sign in'
         });
         return
     }
     res.render('authentification/login')
 })
 
-router.get('/register', (req, res, next) => {
+router.post('/register', (req, res, next) => {
+    const {username, password, email} = req.body
+    console.log(username, password, email)
+    if (username === '' || password === '' || email ===' ') {
+        res.render('index', {
+            errorMessage : 'Indicate an username, email and password to login'
+        })
+        return
+    }
     res.render('authentification/register')
 })
-
 module.exports = router;
