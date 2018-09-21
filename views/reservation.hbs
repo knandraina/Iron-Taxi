@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Réservation</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <h1>Demande de réservation TAXI</h1>
+        <hr>
+
+        <form role="form" class="form-horizontal">
+          <fieldset>
+            <div class="form-group">
+              <label class="col-sm-4 control-label">Addresse de départ</label>
+              <div class="col-sm-8">
+                <input id="user_input_autocomplete_address" name="user_input_autocomplete_address" class="form-control"
+                  placeholder="Lieu de prise en charge">
+              </div>
+            </div>
+          </fieldset>
+
+                    <fieldset>
+            <div class="form-group">
+              <label class="col-sm-4 control-label">Date de départ</label>
+              <div class="col-sm-8">
+                <input class="form-control" placeholder="Jour de prise en charge">
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div class="form-group">
+              <label class="col-sm-4 control-label">Heure de départ</label>
+              <div class="col-sm-8">
+                <input class="form-control" placeholder="Heure de prise en charge">
+              </div>
+            </div>
+          </fieldset>
+
+                    <fieldset>
+            <div class="form-group">
+              <label class="col-sm-4 control-label">Addresse d'arrivée</label>
+              <div class="col-sm-8">
+                <input id="user_input_autocomplete_address" name="user_input_autocomplete_address" class="form-control"
+                  placeholder="Où souhaitez-vous vous rendre?">
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div class="form-group">
+              <label class="col-sm-4 control-label">Heure estimée d'arrivée</label>
+              <div class="col-sm-8">
+                <input class="form-control" placeholder="">
+              </div>
+            </div>
+          </fieldset>
+
+                    <fieldset>
+            <div class="form-group">
+              <label class="col-sm-4 control-label">Numéro de vol</label>
+              <div class="col-sm-8">
+                <input class="form-control" placeholder="exemple : AF754">
+              </div>
+            </div>
+          </fieldset>
+
+                    <fieldset>
+            <div class="form-group">
+              <label class="col-sm-4 control-label">Demande particulière</label>
+              <div class="col-sm-8">
+                <input class="form-control" placeholder="Exemple: siège bébé, place dans le coffre etc">
+              </div>
+            </div>
+          </fieldset>
+
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Include Google Maps JS API -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;key=AIzaSyA9GZvVVK2RIY339htZa5Mxv6E_RHSqv-I "></script>
+
+  <!-- Custom JS code to bind to Autocomplete API -->
+  <script type="text/javascript" src="/javascripts/autocomplete.js"></script>
+</body>
+
+</html>

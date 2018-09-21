@@ -105,7 +105,9 @@ app.get('/', (req, res, next) => {
 });
 //----------VOL LOOKUP----------------
 
-
+app.get('/reservation', (req, res, next) => {
+  res.render('reservation');
+});
 
 module.exports = app;
 
